@@ -76,7 +76,7 @@ class SnakeGame:
                         self.snake.grow(self.food.position)
                         self.food.apply_random_coordinates(self.field.side)
 
-                    # Set base color as grey
+                    # Set base color as black
                     color = (0, 0, 0)
 
                     # Depending on coordinates chage color of cell if there's any instance here

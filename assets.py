@@ -28,11 +28,14 @@ class Snake:
         self._reset()
 
     def _reset(self):
+
+        # Resets snake to default size
         self.tail = [Point(10, 10)]
         self.x, self.y = self.tail[0].x, self.tail[0].y
         self.direction = None
 
     def _move_tail(self):
+
         # Copy old tail to move it cell by cell
         old_tail = self.tail.copy()
 
